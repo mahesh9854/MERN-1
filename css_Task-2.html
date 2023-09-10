@@ -1,73 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task2</title>
-    <style>
-        #vertical {
-            list-style-type: none;
-            margin: 10px;
-            padding: 5px;
-            width: 150px;
-            background-color: rgba(154, 244, 252, 0.787);
-        }
-
-        #vertical li {
-            display: block;
-            color: blue;
-            padding: 8px 16px;
-        }
-
-        #vertical li:hover {
-            background-color: orange;
-            color: white;
-            cursor: pointer;
-        }
-        
-        #horizantal {
-            list-style-type: none;
-            margin: 10px;
-            padding: 0px;
-            width: fit-content;
-            overflow:hidden;
-            background-color: rgba(180, 180, 180, 0.887);
-        }
-        
-        #horizantal li {
-            float: left;
-            color: blue;
-            text-align: center;
-            padding: 10px 16px;
-        }
-        
-        #horizantal li:hover {
-            background-color: rgb(132, 132, 132);
-            cursor: pointer;
-        }
-    </style>
+    <title>Task-2</title>
 </head>
+<style>
+    span ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: skyblue;
+    }
+    /* ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: skyblue;
+    } */
+    
+    span li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    
+    span li {
+      text-align: center;
+      border-bottom: 1px solid #555;
+    }
+    
+    span li:last-child {
+      border-bottom: none;
+    }
+    
+    span li a.active {
+      background-color: orange;
+      color: white;
+    }
+    
+    span li a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
 
+    div ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #a39a9a;
+    }
+
+    div li {
+        float: left;
+    }
+
+    div li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    div li a:hover:not(.active) {
+        background-color: grey;
+    }
+
+    div .active {
+        background-color: grey;
+    }
+</style>
 <body>
-    <h3>Vertical Navigation Bar</h3>
-    <ul id="vertical">
-        <li>Home</li>
-        <li>Java</li>
-        <li>CSS</li>
-        <li>HTML</li>
-        <li>Bootstrap</li>
+<span id="s1">
+    <h2>
+        Vertical Navigation Bar
+    </h2>
+    <ul class="c1">
+        <li>
+            <a class="active" href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#java">Java</a>
+        </li>
+        <li>
+            <a href="#css">CSS</a>
+        </li>
+        <li>
+            <a href="#html">HTML</a>
+        </li>
+        <li>
+            <a href="#bootstrap">Bootstrap</a>
+        </li>
     </ul>
-    <br>
-    <h3>Horizantal Navigation Bar</h3>
-    <ul id="horizantal">
-        <li>Home</li>
-        <li>Java</li>
-        <li>CSS</li>
-        <li>HTML</li>
-        <li>Bootstrap</li>
+</span>
+<div id="s2">
+    <h2>
+        Horizontal Navigation Bar
+    </h2>
+    <ul>
+        <li>
+            <a class="active" href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#java">Java</a>
+        </li>
+        <li>
+            <a href="#html">HTML</a>
+        </li>
+        <li>
+            <a href="#css">CSS</a>
+        </li>
     </ul>
-
+</div>
 </body>
-
 </html>
